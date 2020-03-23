@@ -11,7 +11,7 @@ class OdlUtil:
 		http.add_credentials(username, password)
 		headers = {'Accept': 'application/json'}
 		flow_name = 'flow_' + str(int(time.time()*1000))
-		#s2流表
+		#s2的流表
 		#在检测h2发包的时候s2的1口流量空闲时发的流表
 		h2_to_s2_1 ='{"flow": [{"id": "0","match": {"ethernet-match":'\
                		'{"ethernet-type": {"type": "2048"}},'\
